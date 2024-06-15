@@ -1,0 +1,21 @@
+//// ------------------------------------------------------
+//// THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+//// ------------------------------------------------------
+
+Table User {
+  id Int [pk, increment]
+  username String [unique, not null]
+  email String [unique, not null]
+  matchs Int [not null]
+}
+
+Table Match {
+  id Int [pk, increment]
+  date String [not null]
+  hour String [not null]
+  plataform String [not null]
+  participants Int [not null]
+  vacancies Int [not null]
+  description String [not null]
+  link String [not null]
+}
